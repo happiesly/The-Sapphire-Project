@@ -26,6 +26,30 @@
             <input type="submit" id="sub" autofocus="on" autocomplete="off" />
             <button id="current-button">Current Location</button>
           </form>
+          <div class="placeDetails">
+            <ul class="listStyle">
+              <li id="city"></li>
+              <li><em id="date"></em></li>
+              <li id="sky"></li>
+            </ul>
+            <div class="row">
+              <div class="col-6">
+                <div class="d-flex cloud-temp">
+                  <img src="#" width="100" alt="icon" id="weather-icon" />
+                  <em id="degree"> </em>
+
+                  <em><a href="#" id="celsius" class="active">°C|</a></em>
+                  <em><a href="#" id="fahrenheit">°F</a></em>
+                </div>
+              </div>
+              <div class="col-6">
+                <ul>
+                  <li id="humidity">Humidity: <span id="humid"></span>%</li>
+                  <li id="wind">Wind: <span id="windy"></span> km/h</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -9,7 +9,6 @@ body {
 }
 .layout {
   border: 3px;
-  border-style: inset;
   border-color: #fff;
   border-radius: 50px;
   margin-top: 150px;
@@ -34,7 +33,7 @@ button {
   margin-left: 80px;
   padding: 5px 10px;
   opacity: 0.7;
-  box-shadow: 8px solid gray;
+  box-shadow: 5px solid gray;
 }
 
 button:hover {

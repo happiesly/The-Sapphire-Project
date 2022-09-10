@@ -24,3 +24,25 @@ body {
   margin-top: 50px;
   margin-left: 20px;
 }
+button {
+  background-color: #869068;
+  border-radius: 50px;
+  border-color: #869068;
+  font-size: larger;
+  color: #fff;
+  margin: 12px;
+  margin-left: 80px;
+  padding: 5px 10px;
+  opacity: 0.7;
+  box-shadow: 8px solid gray;
+}
+
+button:hover {
+  background-color: skyblue;
+  color: indigo;
+}
+
+ul {
+  list-style: none;
+  color: #fff;
+}

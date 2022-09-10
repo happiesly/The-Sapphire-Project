@@ -4,8 +4,27 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+button {
+  background-color: #869068;
+  border-radius: 50px;
+  border-color: #869068;
+  font-size: larger;
+  color: #fff;
+  margin: 12px;
+  margin-left: 60px;
+  padding: 5px 10px;
+  opacity: 0.7;
+  box-shadow: 5px solid gray;
+}
+
+button:hover {
+  background-color: skyblue;
+  color: indigo;
+  transition: 200ms ease-in-out;
+}
 .container {
   max-width: 600px;
+  height: 0%;
 }
 .layout {
   border: 3px;
@@ -25,24 +44,6 @@ body {
   margin-top: 50px;
   margin-left: 20px;
 }
-button {
-  background-color: #869068;
-  border-radius: 50px;
-  border-color: #869068;
-  font-size: larger;
-  color: #fff;
-  margin: 12px;
-  margin-left: 80px;
-  padding: 5px 10px;
-  opacity: 0.7;
-  box-shadow: 5px solid gray;
-}
-
-button:hover {
-  background-color: skyblue;
-  color: indigo;
-  transition: 200ms ease-in-out;
-}
 
 ul {
   list-style: none;
@@ -57,4 +58,81 @@ ul {
   margin-right: 30px;
   padding: 10px 20px;
   font-family: "Combo", cursive;
+}
+.d-flex {
+  margin-left: 30px;
+}
+
+.active {
+  color: #fff;
+}
+
+.active:hover {
+  color: #fff;
+  cursor: default;
+}
+
+.listStyle {
+  font-size: larger;
+  list-style-type: none;
+}
+#name {
+  color: #fff;
+}
+#celsius,
+#fahrenheit {
+  text-decoration: none;
+}
+
+#sub {
+  background-color: #869068;
+  border-color: #869068;
+  border-radius: 50px;
+  color: #fff;
+  margin-left: 10px;
+  padding: 5px 10px;
+  opacity: 0.7;
+  font-size: larger;
+}
+
+#sub:hover {
+  background-color: skyblue;
+  color: #fff;
+  transition: 200ms ease-in-out;
+}
+
+#degree {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 50px;
+}
+#my-name {
+  color: #869068;
+}
+#weather-icon {
+  margin-right: 15px;
+}
+
+#city {
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+#humidity,
+#wind {
+  font-size: larger;
+}
+
+#git {
+  font-family: "Combo", cursive;
+  font-size: large;
+  margin-left: 26px;
+  margin-top: -140px;
+}
+
+#git-link {
+  text-decoration: none;
 }

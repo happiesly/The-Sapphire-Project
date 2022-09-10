@@ -9,12 +9,14 @@ body {
 }
 .layout {
   border: 3px;
+  border-style: groove;
   border-color: #fff;
   border-radius: 50px;
   margin-top: 150px;
   margin-bottom: 150px;
   height: 380px;
   width: 650px;
+  padding: 10px;
 }
 
 .search {
@@ -39,9 +41,20 @@ button {
 button:hover {
   background-color: skyblue;
   color: indigo;
+  transition: 200ms ease-in-out;
 }
 
 ul {
   list-style: none;
   color: #fff;
+}
+.quotes-top {
+  color: #fff;
+  position: fixed;
+  margin-top: -140px;
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 10px 20px;
+  font-family: "Combo", cursive;
 }

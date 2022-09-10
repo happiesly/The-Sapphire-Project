@@ -12,7 +12,23 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container">
+      <div class="layout">
+        <div class="content">
+          <form class="search" id="search">
+            <input
+              type="search"
+              placeholder="search for a city"
+              autofocus="on"
+              autocomplete="off"
+              id="search-input"
+            />
+            <input type="submit" id="sub" autofocus="on" autocomplete="off" />
+            <button id="current-button">Current Location</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
   <script src="src/script.js"></script>
 </html>

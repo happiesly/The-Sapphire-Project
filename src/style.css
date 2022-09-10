@@ -4,3 +4,23 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.container {
+  max-width: 600px;
+}
+.layout {
+  border: 3px;
+  border-style: inset;
+  border-color: #fff;
+  border-radius: 50px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  height: 380px;
+  width: 650px;
+}
+
+.search {
+  font-size: larger;
+  display: block;
+  margin-top: 50px;
+  margin-left: 20px;
+}

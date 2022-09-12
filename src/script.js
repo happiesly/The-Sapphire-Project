@@ -92,8 +92,6 @@ function showCelsius(event) {
   let celsiusDegree = document.querySelector("#degree");
   celsiusLink.classList.add("active");
   fahrenheit.classList.remove("active");
-  let celsius = celsiusDegree.innerHTML;
-  celsiusDegree.innerHTML = Math.round(((celsius - 32) * 5) / 9);
 }
 let dateId = document.querySelector("#date");
 let currentDate = new Date();

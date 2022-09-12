@@ -47,7 +47,8 @@ button:hover {
 
 ul {
   list-style: none;
-  color: #fff;
+  color: brown;
+  font-weight: bolder;
 }
 .quotes-top {
   color: #fff;
@@ -64,11 +65,11 @@ ul {
 }
 
 .active {
-  color: #fff;
+  color: #000;
 }
 
 .active:hover {
-  color: #fff;
+  color: #000;
   cursor: default;
 }
 
@@ -102,13 +103,13 @@ ul {
 }
 
 #degree {
-  color: #fff;
+  color: brown;
   font-size: 40px;
   font-weight: bold;
   line-height: 50px;
 }
 #my-name {
-  color: #869068;
+  color: brown;
 }
 #weather-icon {
   margin-right: 15px;
@@ -131,6 +132,7 @@ ul {
   font-size: large;
   margin-left: 26px;
   margin-top: -140px;
+  font-weight: bolder;
 }
 
 #git-link {

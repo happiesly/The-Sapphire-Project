@@ -50,7 +50,14 @@ ul {
   color: brown;
   font-weight: bolder;
 }
-.quotes-top {
+.forecast-panel {
+  border-style: groove;
+  width: 200px;
+  height: 700px;
+  margin-right: 0px;
+  position: absolute;
+}
+.quote {
   color: #fff;
   position: fixed;
   margin-top: -140px;

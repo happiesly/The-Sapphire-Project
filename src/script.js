@@ -48,11 +48,11 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         `
-      <div class="col-12">
-      <span class="forecast-date">${arrangeDate(forecastDay.dt)}</span>
+      <div class="col-6">
+      <div class="forecast-date">${arrangeDate(forecastDay.dt)}</div>
       <img src="http://openweathermap.org/img/wn/${
         forecastDay.weather[0].icon
-      }@2x.png" alt="icon" width="36" />
+      }@2x.png" alt="icon" width="48" />
       <span class="forecast-temp">
         <span class="forecast-temp-max">${Math.round(
           forecastDay.temp.max
@@ -61,16 +61,16 @@ function displayForecast(response) {
           forecastDay.temp.min
         )}°</span>
       </span>
-      <span class="forecast-description">${
-        forecastDay.weather[0].description
-      }</span>
 
-    </div>`;
+<div class="forecast-description"><em> ${
+          forecastDay.weather[0].description
+        }</em></div>
+      ........................
+          </div>`;
     }
   });
   forecastHTML = forecastHTML + `</div>`;
   forecast.innerHTML = forecastHTML;
-  console.log(forecastDetails);
 }
 
 function getForecast(coordinates) {
@@ -79,7 +79,6 @@ function getForecast(coordinates) {
   axios.get(apiUrl).then(displayForecast);
 }
 function showWeather(response) {
-  console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#degree").innerHTML = Math.round(
     response.data.main.temp

@@ -31,7 +31,7 @@ button:hover {
   border-radius: 50px;
   margin-top: 150px;
   margin-bottom: 150px;
-  height: 380px;
+  height: 535px;
   width: 650px;
   padding: 10px;
 }
@@ -50,14 +50,18 @@ ul {
 }
 .forecast-panel {
   border: 5px solid hsl(0, 4%, 74%);
-  width: 250px;
-  height: 600px;
-  top: 150px;
-  right: 0;
-  bottom: 0;
+  border-radius: 50px;
+  width: 270px;
+  top: 270px;
+  right: 3px;
   position: absolute;
-  opacity: 0.6;
-  backdrop-filter: blur(5px);
+  padding: 20px 5px;
+  backdrop-filter: blur(2px);
+}
+.col-6 {
+  text-align: center;
+  color: brown;
+  font-weight: bolder;
 }
 .quote {
   color: #fff;
@@ -122,6 +126,8 @@ ul {
 }
 #weather-icon {
   margin-right: 15px;
+  background-color: #7f7980;
+  border-radius: 50px;
 }
 
 #city {

@@ -7,7 +7,7 @@ body {
 button {
   background-color: #869068;
   border-radius: 50px;
-  border-color: #869068;
+  border: 1px solid #869068;
   font-size: larger;
   color: #fff;
   margin: 12px;
@@ -27,9 +27,7 @@ button:hover {
   height: 0%;
 }
 .layout {
-  border: 3px;
-  border-style: groove;
-  border-color: #fff;
+  border: 5px solid hsl(0, 42%, 42%);
   border-radius: 50px;
   margin-top: 150px;
   margin-bottom: 150px;
@@ -51,11 +49,15 @@ ul {
   font-weight: bolder;
 }
 .forecast-panel {
-  border-style: groove;
-  width: 200px;
-  height: 700px;
-  margin-right: 0px;
+  border: 5px solid hsl(0, 4%, 74%);
+  width: 250px;
+  height: 600px;
+  top: 150px;
+  right: 0;
+  bottom: 0;
   position: absolute;
+  opacity: 0.6;
+  backdrop-filter: blur(5px);
 }
 .quote {
   color: #fff;
@@ -85,7 +87,7 @@ ul {
   list-style-type: none;
 }
 #name {
-  color: #fff;
+  color: brown;
 }
 #celsius,
 #fahrenheit {
@@ -94,7 +96,7 @@ ul {
 
 #sub {
   background-color: #869068;
-  border-color: #869068;
+  border: 1px solid #869068;
   border-radius: 50px;
   color: #fff;
   margin-left: 10px;

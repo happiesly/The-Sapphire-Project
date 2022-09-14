@@ -31,7 +31,32 @@ function displayDate(dayTime) {
   let monthArray = months[month];
   return `${dayArray}, ${monthArray} ${date}, ${year}. (${hours}:${minutes})`;
 }
+function displayForecast(response) {
+  let forecast = document.querySelector(".forecast-panel");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <div class="col-12">
+      <span class="forecast-date">${day}</span>
+      <img src="#" alt="icon" width="36" />
+      <span class="forecast-temp">
+        <span class="forecast-temp-max">°</span>
+        <span class="forecast-temp-min">°</span>
+      </span>
+    </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecast.innerHTML = forecastHTML;
+}
 
+function getForecast(coordinates) {
+  let apiKey = "f09d3949047ab6c9e3bcaf79cf61f619";
+  let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
 function showWeather(response) {
   console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.name;
@@ -56,9 +81,11 @@ function showWeather(response) {
   document
     .querySelector("#weather-icon")
     .setAttribute("alt", response.data.weather[0].description);
+
+  getForecast(response.data.coord);
 }
 function search(city) {
-  let apiKey = "e0a5a97de9a0b7a951e9d154a8f9bad8";
+  let apiKey = "f09d3949047ab6c9e3bcaf79cf61f619";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
   axios.get(apiUrl).then(showWeather);
 }
@@ -69,9 +96,10 @@ function handleSub(event) {
 }
 
 function findLocation(position) {
-  let apiKey = "e0a5a97de9a0b7a951e9d154a8f9bad8";
+  let apiKey = "f09d3949047ab6c9e3bcaf79cf61f619";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showWeather);
+  console.log(apiUrl);
 }
 function getCurrentLocation(event) {
   event.preventDefault();
@@ -110,3 +138,4 @@ let fahrenheit = document.querySelector("#fahrenheit");
 fahrenheit.addEventListener("click", showFahrenheit);
 
 search("uyo");
+displayForecast();

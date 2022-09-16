@@ -102,6 +102,8 @@ ul {
 #celsius,
 #fahrenheit {
   text-decoration: none;
+  background-color: #7f7980;
+  border-radius: 10px;
 }
 
 #sub {

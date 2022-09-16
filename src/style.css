@@ -31,7 +31,7 @@ button:hover {
   border-radius: 50px;
   margin-top: 150px;
   margin-bottom: 150px;
-  height: 535px;
+  height: 540px;
   width: 650px;
   padding: 10px;
 }
@@ -52,8 +52,8 @@ ul {
   border: 5px solid hsl(0, 4%, 74%);
   border-radius: 50px;
   width: 270px;
-  top: 270px;
-  right: 3px;
+  top: 275px;
+  right: 5px;
   position: absolute;
   padding: 20px 5px;
   backdrop-filter: blur(2px);
@@ -121,9 +121,7 @@ ul {
   font-weight: bold;
   line-height: 50px;
 }
-#my-name {
-  color: brown;
-}
+
 #weather-icon {
   margin-right: 15px;
   background-color: #7f7980;
@@ -145,15 +143,18 @@ ul {
 }
 
 #git {
+  border: 2px solid #a52a2a;
+  border-radius: 30px 10px;
+  color: #a52a2a;
   font-family: "Combo", cursive;
-  font-size: large;
+  font-size: 15px;
   margin-top: -140px;
   font-weight: bolder;
-  right: 3px;
   position: absolute;
-  padding: 20px 5px;
+  padding: 6px;
 }
 
-#git-link {
+#git-link,
+.git-link {
   text-decoration: none;
 }
